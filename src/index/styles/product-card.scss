@@ -1,6 +1,6 @@
 .card {
    &__wrapper {
-      width: 70%;
+      width: 80%;
       margin: 5rem auto;
    }
    &__row {
@@ -75,18 +75,28 @@
          background-color: $base-font-color;
       }
    }
-   &__btn {
-      border-radius: 4px;
-		padding: 20px 47px;
-		font-size: 1rem;
-		text-transform: uppercase;
-		font-weight: 700;
-		letter-spacing: 2px;
-		color: $base-font-color;
-		text-align: center;
-		cursor: pointer;
-		white-space: nowrap;
-		border: none;
+   &__action {
+      display: flex;
+      flex-direction: row;
+
+   }
+   &__btn_cart {
+      background-color: $link-color;
+		color: rgb(255, 255, 255);
+      border: none;
+      &:hover {
+         background-color: $accent-color;
+         color: rgb(255, 255, 255);
+      }
+   }
+   &__btn_book {
+      background-color: transparent;
+      border: 1px solid $accent-color;
+      &:hover {
+         border-color: $link-color;
+         background-color: $link-color;
+         color: rgb(255, 255, 255);
+      }
    }
    &__detailes {
       display: flex;
@@ -124,6 +134,18 @@
          padding-bottom: 1.5rem;
       }
    }
+}
+
+.btn {
+   border-radius: 4px;
+   padding: 20px 47px;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-align: center;
+   cursor: pointer;
+   white-space: nowrap;
 }
 
 @media (max-width: 600px) {
