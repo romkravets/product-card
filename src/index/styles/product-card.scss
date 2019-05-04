@@ -1,27 +1,29 @@
 .card {
    &__wrapper {
-      width: 80%;
+      width: 90%;
+      height: auto;
       margin: 5rem auto;
    }
    &__row {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
    }
-   &__column {
+    &__colunmn-left {
+      width: 50%;
       display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex: 1;
+      justify-content: center;
+      align-items: center;
+   }
+   &__column-right {
+      width: 50%;
    }
    &__column-image {
-      width: 100%;
       overflow: hidden;
    }
    &__image > img {
       overflow: hidden;
-      width: 100%;
+      display: block;
       transition: transform .5s ease-in-out;
       transform: scale(1);
       transform-origin: 100% 0;
@@ -30,11 +32,11 @@
          }
    }
    &__column-description {
-      padding: 0 1rem;
+      padding: 0 2rem 0 2rem;
       position: relative;
    }
    &__price {
-      padding: 2rem 0 2.8rem 0;
+      padding: 1.5rem 0 1.9rem 0;
    }
    &__price-value {
       font-size: 2rem;
@@ -55,12 +57,15 @@
       &_tags {
          color: $link-color;
          font-weight: 400;
-         }
       }
+   }
+   &__product {
+      padding-top: 4rem;
+   }
    &__product-items {
       position: relative;
       padding: 0.5rem 0 0 1.2rem;
-      }
+   }
    &__product-item {
       &::before {
          content: "";
@@ -77,12 +82,16 @@
    }
    &__action {
       display: flex;
+      position: relative;
       flex-direction: row;
+      max-width: 100%;
+      padding: 4rem 0 3rem 0;
 
    }
    &__btn_cart {
       background-color: $link-color;
-		color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      margin-right: 2rem;
       border: none;
       &:hover {
          background-color: $accent-color;
@@ -101,7 +110,7 @@
    &__detailes {
       display: flex;
       flex-direction: column;
-      height: 100%
+      height: 100%;
    }
    &__nav-items {
       display: flex;
@@ -114,7 +123,7 @@
    &__nav-item > a {
       font-size: 16px;
       padding: 1.2rem;
-      transition: background-color .2s ease;
+      transition: all 400ms ease-in-out;
       &:hover {
          color: rgb(255, 255, 255);
          background-color: rgb(51, 51, 51);
@@ -137,8 +146,7 @@
 }
 
 .btn {
-   border-radius: 4px;
-   padding: 20px 47px;
+   padding: 1.5em 3em;
    font-size: 1rem;
    text-transform: uppercase;
    font-weight: bold;
@@ -146,9 +154,11 @@
    text-align: center;
    cursor: pointer;
    white-space: nowrap;
+   outline: none;
+   transition: all 400ms ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
    .card {
       &__row {
          display: flex;
@@ -159,6 +169,23 @@
          flex-direction: row;
          flex-basis: 100%;
          flex: 1;
+      }
+      .card__colunmn-left {
+         width: 100%;
+      }
+      .card__column-right {
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .card {
+      &__action {
+         flex-direction: column;
+      }
+      &__btn_cart {
+         margin-bottom: 2rem;
       }
    }
 }
