@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: 'Montserrat','Helvetica','Arial', sans-serif;
+  font-family: $preferFont;
   font-size: $font-size-base;
   color: $base-font-color;
 }
