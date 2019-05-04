@@ -18,9 +18,16 @@
    }
    &__column-image {
       height: 100%;
+      overflow: hidden;
    }
    &__image > img {
       width: 100%;
+      transition: transform .5s ease-in-out;
+      transform: scale(1);
+      transform-origin: 100% 0;
+         &:hover {
+            transform: scale(1.5) translateX(30%);
+         }
    }
    &__column-description {
       height: 100%;
