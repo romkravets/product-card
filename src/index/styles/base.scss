@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -42,14 +43,11 @@ h3 {
    color: $text-color-bold;
    text-transform: uppercase;
    font-size: 1.2rem;
-   
 }
 
 a {
   text-decoration: none;
   display: inline-block;
-  //color: $text-color-bold;
   text-transform: uppercase;
   font-weight: bold;
-
 }

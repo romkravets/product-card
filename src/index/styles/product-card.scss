@@ -60,6 +60,7 @@
       padding: 1.5rem 0 1.9rem 0;
       font-size: 2rem;
       padding-right: 1rem;
+      font-weight: 400;
    }
    &__price-value {
       padding-right: 1rem;
@@ -116,7 +117,7 @@
           -ms-flex-direction: row;
               flex-direction: row;
       max-width: 100%;
-      padding: 5rem 0 3rem 0;
+      padding: 6rem 0 3rem 0;
 
    }
    &__btn_cart {
@@ -146,6 +147,7 @@
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      width: 100%;
    }
    &__nav-items {
       display: -webkit-box;
