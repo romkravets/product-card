@@ -42,7 +42,11 @@ a {
 
 .card {
   max-width: 2560px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /*  Section image   */
+  /*   Section  description   */
+  /*   Buttons   */
+  /*   Section detailes   */ }
   .card__wrapper {
     width: 90%;
     height: auto;
@@ -177,6 +181,7 @@ a {
     .card__detailes-content_text-one {
       padding-bottom: 1.5rem; }
 
+/*   Button base   */
 .btn {
   padding: 1.5em 3em;
   font-size: 1rem;
