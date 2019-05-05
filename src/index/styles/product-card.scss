@@ -29,6 +29,7 @@
    &__column-right {
       width: 50%;
    }
+   /*  Section image   */
    &__column-image {
       overflow: hidden;
    }
@@ -52,6 +53,7 @@
                     transform: scale(1.5) translateX(20%);
          }
    }
+   /*   Section  description   */
    &__column-description {
       padding: 0 0rem 0 2rem;
       position: relative;
@@ -107,6 +109,7 @@
          background-color: $base-font-color;
       }
    }
+   /*   Buttons   */
    &__action {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -139,6 +142,7 @@
          color: $white-color;
       }
    }
+   /*   Section detailes   */
    &__detailes {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -193,6 +197,7 @@
    }
 }
 
+/*   Button base   */
 .btn {
    padding: 1.5em 3em;
    font-size: 1rem;
